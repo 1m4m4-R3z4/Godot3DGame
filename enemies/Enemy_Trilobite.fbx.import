@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co2jghoib6p3c"
-path="res://.godot/imported/Enemy_Trilobite.fbx-c6639c2357bb9bb6a6b9536b89d33087.scn"
+uid="uid://b8gasbkfelft3"
+path="res://.godot/imported/Enemy_Trilobite.fbx-3c81326593e9ef303698bd2c89bd889d.scn"
 
 [deps]
 
-source_file="res://Sci-Fi Essentials Kit[Standard]/FBX/Enemy_Trilobite.fbx"
-dest_files=["res://.godot/imported/Enemy_Trilobite.fbx-c6639c2357bb9bb6a6b9536b89d33087.scn"]
+source_file="res://enemies/Enemy_Trilobite.fbx"
+dest_files=["res://.godot/imported/Enemy_Trilobite.fbx-3c81326593e9ef303698bd2c89bd889d.scn"]
 
 [params]
 

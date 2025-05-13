@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dlpq50v7kopus"
-path="res://.godot/imported/Enemy_EyeDrone.fbx-9b90e305ecd7f5716cf9455a0c0586f1.scn"
+uid="uid://dbvgfn5mwbket"
+path="res://.godot/imported/Enemy_EyeDrone.fbx-103b1239764acac5a5847cdf79d9d4cf.scn"
 
 [deps]
 
-source_file="res://Sci-Fi Essentials Kit[Standard]/FBX/Enemy_EyeDrone.fbx"
-dest_files=["res://.godot/imported/Enemy_EyeDrone.fbx-9b90e305ecd7f5716cf9455a0c0586f1.scn"]
+source_file="res://enemies/Enemy_EyeDrone.fbx"
+dest_files=["res://.godot/imported/Enemy_EyeDrone.fbx-103b1239764acac5a5847cdf79d9d4cf.scn"]
 
 [params]
 

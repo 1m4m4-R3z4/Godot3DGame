@@ -11,6 +11,8 @@ public partial class Player: CharacterBody3D
 	// Signal for taking damage
 	[Signal]
 	public delegate void OnTakeDamageEventHandler(int hp);
+	[Signal]
+	public delegate void EnemyKilledEventHandler(int enemiesKilled);
 	[Export(PropertyHint.Range, "1, 5")]
 	public int health = 3;
 
@@ -37,6 +39,7 @@ public partial class Player: CharacterBody3D
 	float bulletSize = 0.5f;
 
 	public int coins = 0;
+	public int enemiesKilled = 0;
 	public int numJumps = 0;
 
 	private Vector3 _targetVelocity = Vector3.Zero;
@@ -100,9 +103,11 @@ public partial class Player: CharacterBody3D
 		// Register the signal
 		AddUserSignal(nameof(CoinCollectedEventHandler));
 		AddUserSignal(nameof(OnTimeoutEventHandler));
+		AddUserSignal(nameof(EnemyKilledEventHandler));
 
 		// Connect the signal to a method
 		Connect(nameof(CoinCollectedEventHandler), new Callable(this, nameof(CollectCoin)));
+		Connect(nameof(EnemyKilledEventHandler), new Callable (this, nameof(EnemyDefeated)));
 
 		// Get the CanvasLayer node (HUD)
 		var hud = GetNode<CanvasLayer>("/root/Main/HUD");
@@ -326,6 +331,11 @@ public partial class Player: CharacterBody3D
 		EmitSignal(nameof(CoinCollectedEventHandler), coins); // Emit the signal
 	}
 
+	private void EnemyDefeated()
+	{
+		enemiesKilled += 1; // Increase number of enemies killed
+		EmitSignal(nameof(EnemyKilledEventHandler), enemiesKilled);
+	}
  
 	public void OnTimeout()
 	{

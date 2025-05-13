@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=29 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_onms2"]
 [ext_resource type="PackedScene" uid="uid://cnymdajj1vsqm" path="res://objects/platform.tscn" id="6_sdmev"]
@@ -19,6 +19,7 @@
 [ext_resource type="Script" path="res://database/DatabaseConnector.cs" id="16_nab4b"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
 [ext_resource type="PackedScene" uid="uid://dkgmti3yrulmd" path="res://scenes/flag.tscn" id="19_76j1m"]
+[ext_resource type="PackedScene" uid="uid://dm8pvocqm3cpo" path="res://enemies/stationary.tscn" id="20_y2gfc"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_jjfum"]
 
@@ -511,6 +512,38 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 11.1408, 1.81112, -2
 [node name="ReflectiveGlass3" parent="World/Obstacles" instance=ExtResource("7_8urhj")]
 transform = Transform3D(0.0126609, 0, -0.0483705, 0, 0.05, 0, 0.0483705, 0, 0.0126609, 17.5761, 2.79207, 2.06571)
 
+[node name="Enemies" type="Node" parent="World"]
+
+[node name="Stationary2" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(0.394438, 0, 0.637902, 0, 0.75, 0, -0.637902, 0, 0.394438, -18.9462, 6.29604, -2.09267)
+
+[node name="Stationary3" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(0.287001, 0, 0.692915, 0, 0.75, 0, -0.692915, 0, 0.287001, -51.1576, 18.8405, -24.0012)
+
+[node name="Stationary4" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(0.566967, 0, 0.490967, 0, 0.75, 0, -0.490967, 0, 0.566967, -82.0629, 25.5351, 22.181)
+
+[node name="Stationary5" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(0.553462, 0, 0.506142, 0, 0.75, 0, -0.506142, 0, 0.553462, -80.0035, 25.5351, 20.067)
+
+[node name="Stationary6" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(0.53008, 0, 0.53058, 0, 0.75, 0, -0.53058, 0, 0.53008, -77.5178, 25.5351, 18.1139)
+
+[node name="Stationary7" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(0.538303, 0, 0.522235, 0, 0.75, 0, -0.522235, 0, 0.538303, -75.5491, 25.5351, 15.8748)
+
+[node name="Stationary8" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(-0.523202, 0, -0.537363, 0, 0.75, 0, 0.537363, 0, -0.523202, -70.5743, 25.5351, 21.058)
+
+[node name="Stationary9" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(-0.592472, 0, -0.459866, 0, 0.75, 0, 0.459866, 0, -0.592472, -72.9692, 25.5351, 23.1024)
+
+[node name="Stationary10" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(-0.596597, 0, -0.454502, 0, 0.75, 0, 0.454502, 0, -0.596597, -75.1235, 25.5351, 25.4517)
+
+[node name="Stationary11" parent="World/Enemies" instance=ExtResource("20_y2gfc")]
+transform = Transform3D(-0.564983, 0, -0.493248, 0, 0.75, 0, 0.493248, 0, -0.564983, -77.5467, 25.6351, 27.1657)
+
 [node name="Enviorment" type="Node" parent="World"]
 
 [node name="cube8" parent="World/Enviorment" instance=ExtResource("13_drtpy")]
@@ -671,6 +704,9 @@ transform = Transform3D(-0.992797, 0, -1.73619, 0, 2, 0, 1.73619, 0, -0.992797, 
 
 [node name="flag2" parent="." instance=ExtResource("19_76j1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.86842, 1.81112, 6.54478)
+
+[node name="Stationary" parent="." instance=ExtResource("20_y2gfc")]
+transform = Transform3D(-0.277717, 0, -0.960663, 0, 1, 0, 0.960663, 0, -0.277717, 17.3376, 3.37731, 6.53877)
 
 [connection signal="FlagCollected" from="flag" to="HUD/Panel" method="OnFlagCollected"]
 [connection signal="FlagCollected" from="flag2" to="HUD/Panel" method="OnFlag2Collected"]

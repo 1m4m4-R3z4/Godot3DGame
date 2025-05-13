@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbiup42fyprvl"
-path="res://.godot/imported/Enemy_QuadShell.fbx-c22696d73afd3c3eae1f9d1ac266b75c.scn"
+uid="uid://c0h6i87frqe07"
+path="res://.godot/imported/Enemy_QuadShell.fbx-7339b1cd26c6a99e7e88b8057a539ad9.scn"
 
 [deps]
 
-source_file="res://Sci-Fi Essentials Kit[Standard]/FBX/Enemy_QuadShell.fbx"
-dest_files=["res://.godot/imported/Enemy_QuadShell.fbx-c22696d73afd3c3eae1f9d1ac266b75c.scn"]
+source_file="res://enemies/Enemy_QuadShell.fbx"
+dest_files=["res://.godot/imported/Enemy_QuadShell.fbx-7339b1cd26c6a99e7e88b8057a539ad9.scn"]
 
 [params]
 
