@@ -21,12 +21,16 @@ config/icon="res://icon.png"
 [autoload]
 
 Audio="*res://scripts/audio.gd"
+UserAuthentication="*res://database/UserAuthentication.cs"
 DatabaseConnector="*res://database/DatabaseConnector.cs"
+LevelRegistry="*res://database/LevelRegistry.cs"
+UserState="*res://database/UserState.cs"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/stretch/mode="viewport"
 
 [dotnet]
 
