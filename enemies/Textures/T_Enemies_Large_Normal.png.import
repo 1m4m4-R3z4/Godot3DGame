@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cow3y5ummcxr5"
-path.s3tc="res://.godot/imported/T_Enemies_Large_Normal.png-0315f5f7bc24f21ad36f98a119b3f41c.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Enemies_Large_Normal.png-b10ed8996eb4247ee26bc2f0dac88f46.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://enemies/textures/T_Enemies_Large_Normal.png"
-dest_files=["res://.godot/imported/T_Enemies_Large_Normal.png-0315f5f7bc24f21ad36f98a119b3f41c.s3tc.ctex"]
+source_file="res://enemies/Textures/T_Enemies_Large_Normal.png"
+dest_files=["res://.godot/imported/T_Enemies_Large_Normal.png-b10ed8996eb4247ee26bc2f0dac88f46.s3tc.ctex"]
 
 [params]
 
